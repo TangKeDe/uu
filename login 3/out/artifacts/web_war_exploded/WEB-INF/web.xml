@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+    <servlet>
+        <!-- 类名 -->
+        <servlet-name>LoginServlet</servlet-name>
+        <!-- 所在的包 -->
+        <servlet-class>Servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <!-- 访问的网址 -->
+        <url-pattern>/login/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>PersonServlet</servlet-name>
+        <servlet-class>Servlet.PersonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PersonServlet</servlet-name>
+
+        <url-pattern>/login/PersonServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 类名 -->
+        <servlet-name>QuestionServlet</servlet-name>
+        <!-- 所在的包 -->
+        <servlet-class>Servlet.QuestionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServlet</servlet-name>
+        <!-- 访问的网址 -->
+        <url-pattern>/login/QuestionServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <!-- 类名 -->
+        <servlet-name>ResultServlet</servlet-name>
+        <!-- 所在的包 -->
+        <servlet-class>Servlet.ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResultServlet</servlet-name>
+        <!-- 访问的网址 -->
+        <url-pattern>/login/ResultServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
